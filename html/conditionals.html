@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Variables</title>
+  <!-- Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/9595030887.js" crossorigin="anonymous"></script>
+  <!-- CodeMirror CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js" integrity="sha512-8RnEqURPUc5aqFEN04aQEiPlSAdE0jlFS/9iGgUyNtwFnSKCXhmB6ZTNl7LnDtDWKabJIASzXrzD0K+LYexU9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js" integrity="sha512-HN6cn6mIWeFJFwRN9yetDAMSh+AK9myHF1X9GlSlKmThaat65342Yw8wL7ITuaJnPioG0SYG09gy0qd5+s777w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/monokai.min.css" integrity="sha512-R6PH4vSzF2Yxjdvb2p2FA06yWul+U0PDDav4b/od/oXf9Iw37zl10plvwOXelrjV2Ai7Eo3vyHeyFUjhXdBCVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js" integrity="sha512-I6CdJdruzGtvDyvdO4YsiAq+pkWf2efgd1ZUSK2FnM/u2VuRASPC7GowWQrWyjxCZn6CT89s3ddGI+be0Ak9Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <div class="m-2">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar_id">
+      <div class="container-fluid">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="variables.html">Variables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="conditionals.html">Conditionals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="loops.html">Loops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="arrays.html">Arrays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="maps.html">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="functions.html">Functions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dom-events.html">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                jQuery
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="jquery-functions.html">Functions</a>
+                <a class="dropdown-item" href="jquery-selectors.html">Selectors</a>
+                <a class="dropdown-item" href="jquery-elements.html">Elements</a>
+                <a class="dropdown-item" href="jquery-events-effects.html">Events & Effects</a>
+                <a class="dropdown-item" href="jquery-effect-chaining.html">Effect Chaining</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="jquery-scripting-files.html">Scripting Files</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h1>JavaScript Conditionals</h1>
+        </div>
+      </div>
+      <!-- Section Description -->
+      <div class="row">
+        <div class="col">
+            <ol class="p-0 m-0 mt-4" style="list-style-type: none;">
+            <p>
+               In JavaScript conditional statements allows you to specify actions to be performed when certain conditons are met.
+            </p>
+            <h3>Two main branches of conditionals, if and switch</h3>
+            <li class="body-list"><span class="bolded-text">if</span> - Given a condition the code will execute if the conditon is 
+              <code>true</code>.</li>
+            <li class="body-list"><span class="bolded-text">else if</span> - Given another condition the code will execute if the conditon 
+              is <code>true</code>.</li>
+            <li class="body-list"><span class="bolded-text">else</span> - Executes a block of code if all previous conditons are 
+              <code>false</code>.</li>
+            <li class="body-list"><span class="bolded-text">switch</span> - Enables you execute one or many blocks of code depending 
+              on on or many conditions.</li>
+          </div>
+      </div>
+      <!-- Precoded area -->
+      <hr class="dark-hr">
+      <div class="row text-center">
+        <div class="col">
+          <h2>Examples</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label class="text-white"><i class="fa-brands fa-js"></i> JavaScript</label>
+          <textarea class="precode" readonly>
+// If Positive
+let number = 10;
+
+if (number > 0) {
+  console.log("The number is positive.");
+}
+// Output: The number is positive.
+
+// Even or Odd
+let number = 7;
+
+if (number % 2 === 0) {
+  console.log("The number is even.");
+} else {
+  console.log("The number is odd.");
+}
+// Output: The number is odd.
+
+// Student grade
+let marks = 85;
+
+if (marks >= 90) {
+  console.log("Grade: A");
+} else if (marks >= 80) {
+  console.log("Grade: B");
+} else if (marks >= 70) {
+  console.log("Grade: C");
+} else {
+  console.log("Grade: D");
+}
+// Output: Grade: B
+
+// Day of the week
+let day = "Monday";
+
+// Checks each case until it matches the condition
+switch (day) {
+  case "Monday":
+    console.log("It is Monday.");
+    break;
+  case "Tuesday":
+    console.log("It is Tuesday.");
+    break;
+  case "Wednesday":
+    console.log("It is Wednesday.");
+    break;
+  case "Thursday":
+    console.log("It is Thursday.");
+    break;
+  case "Friday":
+    console.log("It is Friday.");
+    break;
+  // If no condition is met, the default executes
+  default:
+    console.log("It is the weekend.");
+}
+// Output: It is Monday.
+        </textarea>
+        <hr class="dark-hr">
+        </div>
+      </div>
+    <div class="spacer"></div>
+    <!-- Editable code area -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2>Practice Conditionals</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-2">
+            <p>
+              Use the examples above in this code editor and see the resulting output. Experiment and customise to learn.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- code input area -->
+      <div class="row justify-content-center">
+        <div class="col input">
+          <label class="text-white"><i class="fa-brands fa-js"></i> JavaScript</label>
+          <textarea id="js-code" class="language-js"></textarea>
+        </div>
+      </div>
+      <div class = "d-flex justify-content-center">
+        <button class = "btn" onclick="runCode()">Run Code</button>
+      </div>
+      <!-- Code output area -->
+      <div class="row justify-content-center">
+        <div class="col output">
+          <label class="text-white"><i class="fa-solid fa-play"></i> Output</label>
+          <textarea id="output" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <div class="text-center p-3">
+        Developed by
+        <a class="text-body" href="https://henriedwards.netlify.app" target="/">Henri Edwards</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap jQuery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
