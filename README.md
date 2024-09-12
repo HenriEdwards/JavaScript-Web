@@ -1,6 +1,6 @@
 # JavaScript and jQuery tutorial website.
 
-This website is developed to be a guiding light for a new developer into the world of JavaScript and jQuery.
+A useful tool for beginners in JavaScript and jQuery, featuring development areas, examples, and clear explanations.
 
 ## Live Application
 [Click](https://javascript-and-jquery-tutorials.netlify.app)
